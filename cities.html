@@ -11,29 +11,7 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <style>
-      
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            width: 500px; 
-            height: 500px; 
-            
-        }
-
-        
-
-        .thumbnail-container img {
-            max-width: 100%;
-            height: auto;
-            width: 500px; 
-            height: 500px; 
-            
-        }
-   
-        
-    </style>
+    
 </head>
 <body>
     
@@ -63,20 +41,115 @@
       The cities rows are in medium size and the letters size was in small so when the size of chrome page is reduced the cities row will break first  </p>
   
   <div class="image-container">
-    <img src="banglore.jpg"class="img-fluid" alt="banglore city">
-    <img src="omaha.jpg"class="img-fluid" alt="omaha city">
-    <img src="vancouver.jpg"class="img-fluid"alt="Vancouver city">
+    <img src="banglore.jpg" class="img-fluid" width=500 height=500 alt="banglore city">
+    <img src="omaha.jpg"class="img-fluid" width=500 height=500 alt="omaha city">
+    <img src="vancouver.jpg"class="img-fluid"width=500 height=500 alt="Vancouver city">
 
   </div>
   <div class="thumbnail-container">
-    <img src="banglore.jpg"class="img-thumbnail" alt="banglore city">
-    <img src="omaha.jpg"class="img-thumbnail" alt="omaha city">
-    <img src="vancouver.jpg"class="img-thumbnail"alt="Vancouver city">
+    <img src="banglore.jpg" width=500 height=500 class="img-thumbnail"  alt="banglore city">
+    <img src="omaha.jpg"class="img-thumbnail"width=500 height=500 alt="omaha city">
+    <img src="vancouver.jpg"class="img-thumbnail"width=500 height=500 alt="Vancouver city">
     </div>
+    <caption>LIST OF CITIES,RIVERS,TRESS ACCORDING TO THE TAKEN LETTERS</caption>
+    
+    <table class="table table-success table-striped table-hover border border-dark-subtle border-5" >
+      
+      <thead class="table-dark">
+      <tr>
+        <th scope="col">LETTER</th>
+        <th scope="col">CITY</Th>
+        <th scope="col">RIVER</th>
+        <th scope="col">TREES</th>
+      </tr>
+    </thead >
+    <tbody>
+      <tr class="table-primary">
+        <td scope="row">B</td>
+        <td>Bangalore</td>
+        <td>Brahmaputra River</td>
+        <td>Beech</td>
+        </tr>
+      <tr class="table-secondary">
+        <td scope="row" >O</td>
+        <td>Omaha</td>
+        <td>Ohio River</td>
+        <td>Olive</td>
+        </tr>
+      <tr class="table-success">
+        <td scope="row">G</td>
+        <td>Guangzhou</td>
+        <td>Godavari River</td>
+        <td>Ginkgo</td>
+      </tr>
+      <tr class="table-danger">
+        <td scope="row">G</td>
+        <td>Gurgaon</td>
+        <td>Green River</td>
+        <td>Gum Tree</td>
+      </tr>
+      <tr class="table-warning">
+        <td scope="row">A</td>
+        <td>Ankara</td>
+        <td>Amazon River</td>
+        <td>Apple</td>
+      </tr>
+      <tr class="table-info">
+        <td scope="row">V</td>
+        <td>Vancouver </td>
+        <td>Volga River</td>
+        <td>Vine Maple</td>
+        </td>
+      </tr>
+        </tbody>
+    </table>
+    <nav class="navbar  navbar-light bg-light">
+      <a class="navbar-brand" href="#">My Cities</a>
+  </nav>
   
+    <div class="container mt-4">
+      <div class="btn-toolbar" role="toolbar" aria-label="Button Toolbar">
+          
+          <div class="btn-group mr-2" role="group" aria-label="Group 1">
+              <button type="button" class="btn btn-success">B</button>
+              <button type="button" class="btn btn-success">O</button>
+              <button type="button" class="btn btn-success">V</button>
+          </div>
+          
+          
+          <div class="btn-group mr-2" role="group" aria-label="Group 2">
+              <button type="button" class="btn btn-warning">G</button>
+              <button type="button" class="btn btn-warning">V</button>
+          </div>
+          
+         
+          <div class="btn-group" role="group" aria-label="Group 3">
+              <button type="button" class="btn btn-danger">G</button>
+          </div>
+      </div>
+  </div><br>
 
-
-
-
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown</button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="basic.html">basic.html</a>
+        <a class="dropdown-item" href="advanced.html">advanced.html</a>
+    </div>
+</div>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="basic.html">Basic</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="advanced.html">Advanced</a>
+          </li>
+      </ul>
+  </div>
+</nav>
 </body>
 </html>
