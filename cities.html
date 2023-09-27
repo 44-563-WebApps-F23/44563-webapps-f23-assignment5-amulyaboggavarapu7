@@ -21,6 +21,10 @@
         height: 400px;
         width: 400px;
       }
+      .card-img-top{
+        height: 250px;
+        width: 250px;
+      }
 
     </style>
 </head>
@@ -52,16 +56,19 @@
       The cities rows are in medium size and the letters size was in small so when the size of chrome page is reduced the cities row will break first  </p>
   
   <div class="image-container">
+    
     <img src="banglore.jpg" class="img-fluid" alt="banglore city">
     <img src="omaha.jpg"class="img-fluid" alt="omaha city">
     <img src="vancouver.jpg"class="img-fluid" alt="Vancouver city">
-
-  </div>
+    </div>
+  
   <div class="thumbnail-container">
+    
     <img src="banglore.jpg" class="img-thumbnail" alt="banglore city">
     <img src="omaha.jpg"class="img-thumbnail" alt="omaha city">
     <img src="vancouver.jpg"class="img-thumbnail" alt="Vancouver city">
     </div>
+  
     <caption>LIST OF CITIES,RIVERS,TRESS ACCORDING TO THE TAKEN LETTERS</caption>
     
     <table class="table table-success table-striped table-hover border border-dark-subtle border-5" >
@@ -117,7 +124,7 @@
       <a class="navbar-brand" href="#">My Cities</a>
   </nav>
   
-    <div class="container mt-4">
+    
       <div class="btn-toolbar" role="toolbar" aria-label="Button Toolbar">
           
           <div class="btn-group mr-2" role="group" aria-label="Group 1">
@@ -137,7 +144,7 @@
               <button type="button" class="btn btn-danger">G</button>
           </div>
       </div>
-  </div><br>
+  <br>
 
   <div class="dropdown">
     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown</button>
@@ -152,6 +159,9 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">My Cities</a>
+        </li>
           <li class="nav-item active">
               <a class="nav-link" href="basic.html">Basic</a>
           </li>
@@ -161,7 +171,7 @@
       </ul>
   </div>
 </nav>
-<div class="container">
+
   <form>
       <div class="form-group">
           <label for="email">Email address</label>
@@ -178,6 +188,38 @@
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+</div>
+<div class="row">
+  <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card" style="width: 16rem;">
+              <img src="banglore.jpg" class="card-img-top" alt="Banglore city image ">
+              <div class="card-body">
+                  <h5 class="card-title">BANGLORE</h5>
+                  <p class="card-text">Bangalore officially Bengaluru is the capital and largest city of the southern Indian state of Karnataka. </p>
+                  <a href="banglore.jpg" class="btn btn-primary">BANGLORE</a>
+              </div>
+          </div>
+      </div> 
+      <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card" style="width: 16rem;">
+              <img src="omaha.jpg" class="card-img-top" alt="Omaha city Image">
+              <div class="card-body">
+                  <h5 class="card-title">OMAHA</h5>
+                  <p class="card-text">Omaha is the largest city in the U.S. state of Nebraska and the county seat of Douglas County.</p>
+                  <a href="omaha.jpg" class="btn btn-primary">OMAHA</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card" style="width: 16rem;">
+              <img src="vancouver.jpg" class="card-img-top" alt="vancouver city image">
+              <div class="card-body">
+                  <h5 class="card-title">VANCOUVER</h5>
+                  <p class="card-text">The city is just north of the U.S. state of Washington.</p>
+                  <a href="vancouver.jpg" class="btn btn-primary">Vancouver</a>
+              </div>
+          </div>
+      </div>
 </div>
 </body>
 </html>
